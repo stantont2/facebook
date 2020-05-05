@@ -1,7 +1,6 @@
-import React from 'react'; // specify the module and then specify the library name
-                            // meteor takes care of the rest
+import React from 'react';
 import ReactDOM from 'react-dom';
-import {Meteor} from 'meteor/meteor'; // named export from Meteor
+import {Meteor} from 'meteor/meteor';
 import {UP_Collection_Access} from './../imports/api/user_posts.js';
 import App from './../imports/ui/App.js';
 
@@ -15,8 +14,8 @@ Meteor.startup(() =>  {
         let title = 'facebook';
 
     ReactDOM.render(<App
-        passedPropTitle={title}
-        passedPropAllPosts={allPostsInDB}
+        passedTitle={title}
+        passedPosts={allPostsInDB}
       />, document.getElementById('content'));
 
   });

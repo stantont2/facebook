@@ -11,12 +11,12 @@ export default class App extends React.Component {
       <div className='wrapper'>
 
         <TitleBar
-        title={this.props.passedPropTitle}/>
+        title={this.props.passedTitle}/>
        {/* wrap AddTopic and TopicList with a div that utilizes the wrapper class */}
        </div>
        <div className='wrapper'>
           <AddTopics />
-          <TopicList passed_posts={this.props.passedPropAllPosts}/>
+          <TopicList passed_posts={this.props.passedPosts}/>
         </div>
       </>
     )
@@ -25,6 +25,6 @@ export default class App extends React.Component {
 };
 
 App.propTypes = {
-  passedPropTitle: PropTypes.string.isRequired,
-  passedPropAllPosts: PropTypes.array.isRequired
+  passedTitle: PropTypes.string.isRequired,
+  passedPosts: PropTypes.array.isRequired
 };

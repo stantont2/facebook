@@ -12,7 +12,7 @@ export default class RenderPost extends React.Component{
     return (
       <>
       <div key={this.props.post_prop_obj._id} className ='singleItems'>
-    {this.props.post_prop_obj.topic} have {this.props.post_prop_obj.votes} likes
+    {this.props.post_prop_obj.topic} has {this.props.post_prop_obj.votes} likes
     {''/* single space before button hack */}
     <button onClick={() => {
       UP_Collection_Access.update({_id: this.props.post_prop_obj._id}, {$inc: {votes: 1}})
