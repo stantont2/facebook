@@ -1,0 +1,23 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+html {
+ font-size: 62.5%;
+}
+body {
+ background-color: #dfe1ee;
+ font-size: 1.6rem;
+ color: grey;
+ font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+
+
+h1 {
+ font-weight: 300;
+ font-size: 4.4rem;
+}
+
+@import './components/_titlebar.scss';// ./ indicates to start in current folder
+@import './components/_wrapper.scss';
+@import './components/_singleItem.scss';
